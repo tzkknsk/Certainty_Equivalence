@@ -32,11 +32,10 @@ if buttom:
                set_color = "  赤"
                set_color_en = "Red"
 
-          st.subheader(f"【被験者番号 : {id}】")
+          st.subheader(f"【 被験者番号 : {id} 】")
           st.write(f"対象問題番号: {question_num}")
-          st.write(f"個別くじ番号: {set_num}")
-          st.write(set_color)
-          #st.subheader("")
+          st.write(f"個別くじ番号: {set_num} ({set_color})")
+          st.subheader("")
 
           #dic_show[i] = [id, question_num, set_num, set_color]
           dic[i] = [id, question_num, set_num, set_color_en]
