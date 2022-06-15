@@ -46,7 +46,7 @@ if buttom:
           show_dict[k]=pd.Series(v)
 
      df_show = pd.DataFrame(show_dict).T
-     df_show = df_show.rename(columns={0: '     被験者番号', 1: '      対象問題番号', 2: '     個別くじ番号', 3: '色', })
+     df_show = df_show.rename(columns={0: '被験者番号', 1: '対象問題番号', 2: '個別くじ番号', 3: '色', })
      st.dataframe(df_show, width = 800, height = 2000)
 
      ## ---------- 回答結果の出力 ---------- ##
