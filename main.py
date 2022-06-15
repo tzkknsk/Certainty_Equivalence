@@ -15,7 +15,7 @@ buttom = st.button('決定')
 st.subheader("")
 
 dic = {} 
-dic_show = {} 
+#dic_show = {} 
 index = range(1, 53)
 
 if buttom:
@@ -38,16 +38,16 @@ if buttom:
           #st.subheader(set_color)
           #st.subheader("")
 
-          dic_show[i] = [id, question_num, set_num, set_color]
+          #dic_show[i] = [id, question_num, set_num, set_color]
           dic[i] = [id, question_num, set_num, set_color_en]
 
-     show_dict={}
-     for k,v in dic_show.items():   # 一度pd.Seriesに変換
-          show_dict[k]=pd.Series(v)
+     #show_dict={}
+     #for k,v in dic_show.items():   # 一度pd.Seriesに変換
+     #     show_dict[k]=pd.Series(v)
 
-     df_show = pd.DataFrame(show_dict).T
-     df_show = df_show.rename(columns={0: '_____________被験者番号', 1: '_____________対象問題番号', 2: '_____________個別くじ番号', 3: '色', })
-     st.dataframe(df_show, width = 800, height = 2000)
+     #df_show = pd.DataFrame(show_dict).T
+     #df_show = df_show.rename(columns={0: '被験者番号', 1: '対象問題番号', 2: '個別くじ番号', 3: '色', })
+     #st.dataframe(df_show, width = 800, height = 2000)
 
      ## ---------- 回答結果の出力 ---------- ##
 
